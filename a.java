@@ -13,7 +13,9 @@ public class a {
 			WebDriver driver= new ChromeDriver();
 			driver.get("https://mvnrepository.com/");
 			driver.manage().window().maximize();
+		  driver.manage().timeouts().impilictlywitin(10);
 		
 	}
 
 }
+
