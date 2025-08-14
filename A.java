@@ -1,26 +1,25 @@
-package A;
-
-import java.time.Duration;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WindowType;
-import org.openqa.selenium.chrome.ChromeDriver;
+package Array;
 
 public class A {
-	
+
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\apple\\Desktop\\AA\\chromedriver.exe");
-		WebDriver driver= new ChromeDriver();
-		driver.get("https://www.flipkart.com/");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		driver.manage().window().maximize();
-		driver.switchTo().newWindow(WindowType.TAB);
-		driver.get("https://www.onlinesbi.sbi/");
-		
-		
-		
+      int a[]= new int [4];
+      a[0]=1;
+      a[1]=2;
+      a[2]=3;
+      a[3]=4;  
+      System.out.println(a[1]);
+      System.out.println();
+      for (int m=0;m<3;m++) {
+    	  System.out.println(a[m]);  }
+      System.out.println();
+      for (int j=3;j>=0;j--) {
+    	  System.out.println(a[j]);
+      }
+      System.out.println();
+
+      System.out.println(a.length);
+      
 	}
-	
-	
+
 }
